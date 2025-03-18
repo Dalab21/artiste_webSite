@@ -1,0 +1,235 @@
+<html>
+  <head>
+    
+    <title>Rythmes ancestrales de Badogo Toumani - Contact</title>
+  <style>
+      body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f5e6d3;
+          color: #4a3514;
+      }
+      
+      .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+      }
+      
+      header {
+          background-color: #8b4513;
+          color: #f5e6d3;
+          padding: 20px 0;
+          text-align: center;
+      }
+      
+      h1 {
+          margin: 0;
+          font-size: 2.5em;
+          font-weight: bold;
+      }
+      
+      nav {
+          background-color: #d2691e;
+          padding: 10px 0;
+      }
+      
+      nav ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+      }
+      
+      nav ul li {
+          margin: 0 15px;
+      }
+      
+      nav ul li a {
+          color: #f5e6d3;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 1.1em;
+          transition: color 0.3s ease;
+      }
+      
+      nav ul li a:hover {
+          color: #ffd700;
+      }
+      
+      .contact-container {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 40px;
+      }
+      
+      .contact-form {
+          width: 60%;
+          background-color: #fff;
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      
+      .contact-info {
+          width: 35%;
+          background-color: #d2691e;
+          color: #f5e6d3;
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      
+      h2 {
+          margin-top: 0;
+          margin-bottom: 20px;
+          color: #8b4513;
+      }
+      
+      .contact-info h2 {
+          color: #f5e6d3;
+      }
+      
+      form {
+          display: flex;
+          flex-direction: column;
+      }
+      
+      label {
+          margin-bottom: 5px;
+          font-weight: bold;
+      }
+      
+      input, textarea {
+          margin-bottom: 15px;
+          padding: 10px;
+          border: 1px solid #d2691e;
+          border-radius: 5px;
+          font-size: 1em;
+      }
+      
+      textarea {
+          height: 150px;
+          resize: vertical;
+      }
+      
+      button {
+          background-color: #8b4513;
+          color: #f5e6d3;
+          border: none;
+          padding: 10px 20px;
+          font-size: 1em;
+          font-weight: bold;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+      }
+      
+      button:hover {
+          background-color: #d2691e;
+      }
+      
+      .contact-method {
+          margin-bottom: 20px;
+      }
+      
+      .contact-method h3 {
+          margin-bottom: 5px;
+      }
+      
+      footer {
+          background-color: #8b4513;
+          color: #f5e6d3;
+          text-align: center;
+          padding: 20px 0;
+          margin-top: 40px;
+      }
+      
+      .social-links a {
+          color: #f5e6d3;
+          font-size: 1.5em;
+          margin: 0 10px;
+          text-decoration: none;
+      }
+      
+      @keyframes drumBeat {
+          0% { transform: scale(1); }
+          50% { transform: scale(1.1); }
+          100% { transform: scale(1); }
+      }
+      
+      .animated-drum {
+          animation: drumBeat 1s infinite;
+          display: inline-block;
+      }
+  </style>
+</head>
+<body>
+  <header>
+      <div class="container">
+          <h1><span class="animated-drum">🦁</span> Rythmes ancestrales de Badogo Toumani <span class="animated-drum">🦁</span></h1>
+      </div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="{{ url_for('index') }}">Accueil</a></li>
+      <li><a href="{{ url_for('biography') }}">Biographie</a></li>
+      <li><a href= "{{ url_for('photos') }}">Gallerie</a></li>
+      <li><a href="{{ url_for('videos') }}">Videos</a></li>
+      <li><a href=  "{{ url_for('contact') }}">Contact</a></li>
+  </ul>
+  </nav>
+  
+  <main>
+      <div class="container">
+          <div class="contact-container">
+              <div class="contact-form">
+                  <h2>Prise de contact</h2>
+                  <form action="#" method="POST">
+                      <label for="name">Nom:</label>
+                      <input type="text" id="name" name="name" required>
+                      
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+                      
+                      <label for="subject">Sujet:</label>
+                      <input type="text" id="subject" name="subject" required>
+                      
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" required></textarea>
+                      
+                      <button type="submit">Envoyer message</button>
+                  </form>
+              </div>
+              <div class="contact-info">
+                  <h2>Mon contact</h2>
+                  <div class="contact-method">
+                      <h3>Email</h3>
+                      <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b1d8dfd7def1dcd0dfc2d0dcc4c2d0c3d9c8c5d9dcc29fd2dedc">contact@gmail.com</a></p>
+                  </div>
+                  <div class="contact-method">
+                      <h3>Téléphone</h3>
+                      <p>+ (223) 456-7890</p>
+                  </div>
+                  <div class="contact-method">
+                      <h3>Adresse</h3>
+                      <p>Bamako, République du Mali</p>
+                  </div>
+                  <div class="contact-method">
+                      <h3>Je suis disponible</h3>
+                      <p>Lundi - Vendredi : 8H00 - 20H00<br>Samedi: 09H00 - 18H00<br>Dimanche: Toute la journée</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </main>
+  
+  {% include 'footer.html' %}
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
+
+</body></html>

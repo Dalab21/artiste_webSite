@@ -1,0 +1,249 @@
+<html>
+    <head>
+        
+        <title>Rythmes ancestrales de Badogo Toumani</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5e6d3;
+            color: #4a3514;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #8b4513;
+            color: #f5e6d3;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        
+        nav {
+            background-color: #d2691e;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #f5e6d3;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        
+        .biography-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        
+        .bio-text {
+            width: 60%;
+        }
+        
+        .bio-sidebar {
+            width: 35%;
+        }
+        
+        h2 {
+            color: #8b4513;
+            border-bottom: 2px solid #d2691e;
+            padding-bottom: 10px;
+        }
+        
+        .bio-image {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .timeline {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .timeline h3 {
+            color: #8b4513;
+            margin-top: 0;
+        }
+        
+        .timeline ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .timeline li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .timeline li:before {
+            content: '•';
+            color: #d2691e;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+        
+        .quote {
+            font-style: italic;
+            color: #8b4513;
+            font-size: 1.2em;
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: rgba(210, 105, 30, 0.1);
+            border-radius: 10px;
+        }
+        
+        footer {
+            background-color: #8b4513;
+            color: #f5e6d3;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .social-links a {
+            color: #f5e6d3;
+            font-size: 1.5em;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        @keyframes drumBeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .animated-drum {
+            animation: drumBeat 1s infinite;
+            display: inline-block;
+        }
+    </style>
+    </head>
+    <body>
+    <header>
+        <div class="container">
+            <h1><span class="animated-drum">🦁</span> Rythmes ancestrales de Badogo Toumani<span class="animated-drum">🦁</span></h1>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+          <li><a href="{{ url_for('index') }}">Accueil</a></li>
+          <li><a href="{{ url_for('biography') }}">Biographie</a></li>
+          <li><a href= "{{ url_for('photos') }}">Gallerie</a></li>
+          <li><a href="{{ url_for('videos') }}">Videos</a></li>
+          <li><a href=  "{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+      </nav>
+    
+    <main>
+        <div class="container">
+            <div class="biography-content">
+                <div class="bio-text">
+                    <h2>Biographie de Badogo Toumani</h2>
+                    <p>La renommée de Badogo Toumani ne cesse de croître, tant à l’intérieur qu’à l’extérieur du Mali. Ses prestations sont particulièrement appréciées dans la sous-région ouest africaine. </p>
+                    <p>Ses lives quotidiens sur Tiktok sont écoutés par un large public. Ses fans viennent de partout et de tous les milieux (amateurs de donso ngoni, detenteurs du savoir traditionnel, africains de la diaspora, …) à travers le monde (Afrique, Europe, Amérique et Asie).</p>
+                    <p> Badogo Toumani est un artiste charismatique qui incarne des valeurs telles que le professionnalisme, l’humilité, la simplicité et le respect. Sociable, il est profondément attaché aux valeurs traditionnelles de l’Afrique.</p>
+                        
+                        Toumani Coulibaly est né il y a une trentaine d’années à Badogo, dans le Wassolo. Badogo est un village de cette région, situé à environ 40 kilomètres au nord-est de Yanfolila. </p>
+                    <p>Cette région est réputée pour ses paysages pittoresques, son agriculture et sa culture riches, ainsi que pour ses ressources minières, notamment l’exploitation aurifère.</p>
+                        
+                    <p>Ayant perdu ses parents très tôt, il fait face aux épreuves de la vie. Ce qui lui confère l’acharnement au travail, la rage de réussir et la force de vaincre.</p>
+                        
+                    <p>La zone étant très riche en gibiers, il a l’occasion d’assister aux cérémonies organisées par les chasseurs (Donsos) lors de l’ouverture et de la fermeture des périodes de chasse, ainsi que lors de mariages, baptêmes et autres événements sociaux. </p>
+                    <p>De célèbres Maitres du donso ngoni, comme Toumani Koné, Yoro Sidibé, Guimbala Yaya Sangaré y ont animé des veillées de chasseurs dans cette contrée.</p>
+                        
+                    <p>C’est lors de ces cérémonies que Toumani découvre le donso ngoni. Il tombe directement sous le charme de cet instrument magique qu’est le ngoni.</p>
+                        
+                    <p>Son premier maitre initiateur est Badogo Malicky. Ensuite, il part perfectionner son talent auprès de grands Maitres du donso ngoni comme Lamine Coulibaly, Denso Toumani, Yoro Sidibé et Souleymane Konaté.</p>
+                        
+                    <p>Sa formation ayant pris fin il y a quelques années, Il s’installe en périphérie de Bamako, à Gouana. Très demandé par les amateurs du donso ngoni, il anime des veillées pour ses fans (chasseurs, non chasseurs, artistes) en fonction de ses disponibilités.</p>
+                        
+                    <p>Il a à son actif une quinzaine d’albums. Parmi ses tubes figurent des chansons comme les classiques (Diandjo, Mbarassa, Dangoroba niansa et Donso saya Salif Togola) ainsi que des innovations comme Ni djougou, Moustapha Diallo, Mohamed Kaddafi, Solona Madou, Koutiala Filaniw, Boudianfara Siby, Samba Coulibaly, etc.</p>
+                        
+                    <p>Badogo Toumani a beaucoup gagné en maturité. Ses créations musicales traitent des thématiques comme la santé, l’éducation, le patriotisme, les problèmes sociaux, la solidarité, le mérite et l’entraide.</p>
+                        
+                    <p>Ouvert à la collaboration avec des artistes d’autres styles de musique, Toumani Coulibaly souhaite faire évoluer la musique malienne en général et celle du donso ngoni en particulier. Les cérémonies qu’il anime sont toujours bondées de monde. </p>
+                    <p>Elles offrent des occasions uniques pour déguster du donso ngoni obéissant aux règles de l’art, transmis de génération en génération.</p>
+                        
+                    <p>Toumani demeure et demeurera toujours ce grand artiste auteur compositeur arrangeur de sons qui ne demande qu’à satisfaire ses fans.</p>
+                        
+                    <p>Badogo Toumani compte sur vous pour le soutenir, l’aider et lui donner la possibilité de faire connaître son art au Mali et à l’international.</p>
+                        
+                    <p>Pour vos cérémonies, projets ou échanges professionnels, vous pouvez me contacter au :</p> 
+                    <p>Badogo Toumani Coulibaly</p> 
+                    <p>Portable : (+223) 78 32 05 22</p>   
+                    <p>Bamako Mali</p>
+                </div>
+                <div class="bio-sidebar">
+                    <img src="{{ url_for('static', filename='images/img3.jpg') }}" alt="Portrait de gonifo Toumani dit Badogo Toumani, Donso ngonifo du Mali Wassolo, warm lighting" class="bio-image" width="400" height="600">
+                    <div class="timeline">
+                        <h3>Career Highlights</h3>
+                        <ul>
+                            <li>1985: Toumani voit le jour à Bagdogo (Mali)</li>
+                            <li>1992: Début de l'apprentissage du n'goni chez Badogo Malicky</li>
+                            <li>2003: Prefectionnement de son style de jeu du n'goni chez Yoro Sidibé </li>
+                            <li>2010: Fin de son parcours d'apprentissage avec Souleymane Konaté</li>
+                            <li>2012: Participation au festival des chasseurs de Djiguiya Blon au Palais de la Culture(Bamako)</li>
+                            <li>2015: Veillée des chasseurs de la Commune II de Bamako</li>
+                            <li>2018: Prix de meilleur joueur de n'goni du Mali, catégorie "jeunes"</li>
+                            <li>2020: Cérémonie de veillée des chasseurs diffusée en direct sur Tiktok </li>
+                            <li>2022: Passage à l'émission Haut Standing 880TV et OM TV </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="quote">
+                "La musique est le fil qui tisse la trame de notre humanité commune. Grâce aux rythmes de nos ancêtres, nous pouvons jeter des ponts entre les cultures et les générations." - Badogo Toumani
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rythmes ancestrales de Badogo Toumani. Tous droits reservés.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/p/Badogo-Toumani-Officiel-100084851860463/?_rdr" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.tiktok.com/@toumanicoulibaly73?lang=fr" target="_blank" rel="noopener noreferrer">TikTok</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    </body></html>
